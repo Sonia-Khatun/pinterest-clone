@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-zinc-300 flex items-center justify-center">
+    <div class="w-78 bg-white px-12 py-8 rounded-[28px]">
+      <h1 class="text-2xl mb-6 tracking-tighter capitalize text-center font-semibold text-zinc-700 leading-none">Create New Account</h1>
+        <form action="/register" method="post">
+          <input class="border-1 rounded-md block w-full px-3 py-2 mt-3" type="text" name="fullname" placeholder="Full Name">
+           <input class="border-1 rounded-md block w-full px-3 py-2 mt-3" type="text" name="username" placeholder="username">
+           <input class="border-1 rounded-md block w-full px-3 py-2 mt-3" type="email" name="email" placeholder="email">
+           <input class="border-1 rounded-md block w-full px-3 py-2 mt-3" type="number" name="contact" placeholder="contact">
+           <input class="border-1 rounded-md block w-full px-3 py-2 mt-3" type="password" name="password" placeholder="password">
+           <input class="border-1 rounded-md block w-full px-3 py-2 mt-5 bg-red-600 rounded-full text-white" type="submit" value="Create new account">
+           <p class="text-xs font-semibold mt-5 text-center w-3/4 mx-auto text-zinc-600">By continuing, you agree to Pinterest's Terms of Service and acknowledge you've read our Privacy Policy.</p>
+        </form>
+        <a class="inline-block mt-7 text-sm font-semibold text-zinc-700 text-center w-full" href="/">Login Existing Account</a>
+    </div>
+  </div>
+<% include ./partials/footer.ejs %>
