@@ -7,10 +7,14 @@
                     <img class="w-full h-full object-cover" src="/images/uploads/<%= elem.image %>" alt="">
                 </div>
                 <h5 class="mt-2 text-sm"><%= elem.title %></h5>
-                <h6 class="text-xs font-semibold opacity-50">@<%= elem.user.username %></h6>
+                
+                <% if (elem.user && elem.user.username) { %>
+                    <h6 class="text-xs font-semibold opacity-50">@<%= elem.user.username %></h6>
+                <% } else { %>
+                    <h6 class="text-xs font-semibold text-red-400 opacity-50">User not found</h6>
+                <% } %>
             </div>
         <% }) %>
-        
-     </div>
+    </div>
 </div>
 <% include ./partials/footer.ejs %>
