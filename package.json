@@ -6,10 +6,10 @@
   "engines": {
     "node": "20.x"
   },
-  "scripts": {
-    "start": "nodemon"
-  
-  },
+ "scripts": {
+  "dev": "node --watch app.js",
+  "start": "node app.js"
+},
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
